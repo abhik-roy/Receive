@@ -1,0 +1,404 @@
+/* Defualt Styles */
+@font-face {
+  font-family: "Custom Segoe";
+  src: url("/fonts/Segoe UI.ttf");
+}
+
+html, body{
+  background: url("/images/background.png") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Custom Segoe";
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  clear: both;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+h1{
+  font-size: 48px;
+}
+
+h1.gradient {
+  padding: 5px;
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #ffffff, #5d98ff, #ffffff);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.img-fluid.home{
+  display: inline-flex !important;
+  background-color: rgba(250,250,250, 0.6);
+  border-radius: 4px 4px 20px 20px;
+  max-width: auto;
+  max-height: 50px;
+  padding: 5px;
+  margin-left: 1vw;
+}
+
+.img-fluid.main{
+  max-height: 300px;
+}
+
+.img-fluid.tab{
+  display: inline-flex !important;
+  max-width: auto;
+  max-height: 50px;
+}
+.img-fluid.qrcode{
+  max-width: auto;
+  max-height: 200px;
+}
+.navbar-toggler{
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+}
+.navbar-toggler-icon{
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+}
+/* Navigation bar styles */
+.navbar {
+  height: 50px;
+	margin: 0 !important;
+  padding: 0px !important;
+  font-size: 20px;
+  transition-duration: 1s;
+  text-align: right;
+}
+
+.navbar-toggler-icon{
+  background-image: url("/images/toggler-down.png");
+  transition-delay: 112ms;
+}
+
+.nav-item{
+  padding-left: 0px;
+}
+
+.nav-link{
+  color: rgb(70,70,70);
+} 
+.nav-link:hover{
+  color: rgb(30,30,30);
+}
+
+.nav-pills > li > a {
+  transition-duration: 500ms;
+  border-radius: 15px !important;
+}
+
+.nav-pills > li > a.active {
+  transition-duration: 500ms;
+}
+
+.nav-pills > li > a:hover {
+  background-color: rgb(100, 169, 255) !important;
+  color: white;
+  transition-duration: 250ms;
+}
+
+.nav-pills.session-bot > li > a{
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  border-radius: 15px !important;
+}
+
+.nav-pills.session-bot > li > a.active {
+  transition-duration: 500ms;
+  background-color: rgb(200,200,200) !important;
+}
+
+
+.collapse .navbar-collapse{
+  border-top-right-radius: 0px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 30px;
+  background-color: black;
+}
+
+.navbar-nav{
+  background-color: rgba(250,250,250, 0.8);
+  display: inline-flex !important;
+  justify-content: space-around;
+  flex-basis: auto;
+  border-radius: 4px 4px 4px 30px;
+  padding-right: 10px;
+  margin-right: 1vw;
+}
+
+.nav.session-bot{
+  background-color: white;
+  height: 50px;
+}
+.nav.session-top{
+  background-color: rgba(250, 250, 250, 0.9);
+  border-radius: 4px 4px 30px 30px;
+  width: 650px;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+/* Login Form Styles */
+.form-login {
+  display: none; /* Hide on startup */
+  width: 300px;
+  min-width: 300px;
+  padding: 15px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 30px;
+  box-shadow: 0 20px 30px black;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  z-index: 1000;
+  color: rgb(60,60,60);
+  text-align: center;
+}
+.form-login .checkbox {
+  opacity: 100%;
+  font-weight: 400;
+}
+
+.form-login .close{
+  border-top-right-radius: 30px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  background-color: rgb(146, 48, 48);
+  margin: -15px -15px 0 0;
+  width: 40px;
+  height: 40px;
+}
+.form-login .error{
+  color: red;
+}
+.form-login .form-control {
+  opacity: 100%;
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-login .form-control:focus {
+  opacity: 100%;
+  z-index: 2;
+}
+.form-login input[type="email"] {
+  margin-bottom: 10px;
+  opacity: 100%;
+
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-login input[type="text"] {
+  margin-bottom: 10px;
+  opacity: 100%;
+
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-login input[type="password"] {
+  margin-bottom: 10px;
+  opacity: 100%;
+
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Receipts styles */
+/* Style the search box on view all receipts page */
+.search-receipts {
+  display: inline-block;
+  text-align: right;
+  margin-top: 10px;
+  left: 75vw;
+}
+.search-receipts input[type=text] {
+  padding: 6px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  width: 245px;
+}
+
+.search-receipts input[type=text]:focus {
+  outline: none;
+}
+
+.search-receipts button {
+  background: rgb(200,200,200);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.view-all-button {
+  background: rgb(100, 169, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: center;
+  vertical-align: bottom;
+  display: flex;
+  justify-content: center;
+}
+
+.search-receipts button:focus {
+  outline: none;
+}
+
+.search-receipts img {
+  margin-top: -2px;
+  margin-left: -8px;
+  width: 50px;
+  height: 50px;
+}
+
+/* When the screen is less than 1300px wide, move search to middle below navbar */
+@media screen and (max-width: 1300px) and (min-width: 768px) {
+  .search-receipts {
+    text-align: center;
+    margin-top: 70px;
+    left: 0;
+  }
+  .search-receipts button {
+    margin-right: 0px;
+  }
+  .search-receipts input[type=text] {
+    width: 400px;
+  }
+  .show-all-receipts {
+    margin-top: 70px;
+  }
+}
+
+/* When the screen is less than 768 wide, move search to middle top */
+@media screen and (max-width: 767px) {
+  .search-receipts {
+    text-align: center;
+    margin-top: 10px;
+    left: 0;
+  }
+  .search-receipts input[type=text] {
+    width: 245px;
+  }
+  .show-all-receipts {
+    margin-top: 10px;
+  }
+}
+
+.no-receipts {
+  text-align: center;
+  font-size: 48px;
+  color: rgb(146, 48, 48)
+}
+
+.row { /* fixes extra horizontal scroll bar */
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.show-all-receipts {
+  width: 100vw; /* entire screen, used to fix weird bootstrap issue */
+}
+
+.receipt-list {
+  text-align: left;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(200,200,200);
+  height: 100px;
+  width: 90%;
+  padding: 5px 20px;
+  margin-left: 5%;
+}
+
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+.receipt-list-store{
+  font-size: 36px;
+  height: 50px;
+  width: calc(100% - 130px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-top: 0px;
+}
+
+.receipt-list-date{
+  font-size: 24px;
+  height: 50px;
+  width: 130px;
+  vertical-align: middle;
+  text-align: right;
+  padding-top: 12px;
+}
+
+.receipt-list-subtitle{
+  font-size: 20px;
+}
+
+.receipt-list-subtext{
+  font-size: 20px;
+}
+/* End receipts styles */
+
+#store-street { width: 650px; border: 1px solid #999999; padding: 5px; }
+#add-store-button {padding: 5px;}
+
+.store-error{
+  color: red;
+}
+
+table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-spacing: 2px;
+}
+
+th{
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+td{
+  border: 1px solid black;
+  display: table-cell;
+  vertical-align: inherit;
+}
